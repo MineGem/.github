@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Standard preset across MineGem repositories",
+  "description": "Standard preset across my repositories",
   "extends": [
     "config:base"
   ],
@@ -8,7 +8,7 @@
     "type: dependencies"
   ],
   "schedule": [
-    "before 2am"
+    "after 2am"
   ],
   "packageRules": [
     {
@@ -22,6 +22,12 @@
         "com.google.auto.value:"
       ],
       "groupName": "auto-value monorepo"
+    },
+    {
+      "matchSourceUrlPrefixes": [
+        "https://github.com/immutables/immutables"
+      ],
+      "groupName": "immutables monorepo"
     },
     {
       "matchUpdateTypes": ["patch"],
@@ -46,7 +52,6 @@
       "groupName": "gradle and github actions"
     }
   ],
-  "prHourlyLimit": 8,
-  "pruneStaleBranches": false,
+  "prHourlyLimit": 4,
   "semanticCommitType": "build"
 }
