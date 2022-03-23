@@ -52,6 +52,6 @@
       "groupName": "gradle and github actions"
     }
   ],
-  "prHourlyLimit": 4,
+  "prHourlyLimit": 16,
   "semanticCommitType": "build"
 }
